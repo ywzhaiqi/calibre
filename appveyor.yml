@@ -20,7 +20,6 @@ install:
 build: off
 
 test_script:
-  - "%WITH_COMPILER% %PYTHON%/Scripts/pip install win32api"
   - "%WITH_COMPILER% %PYTHON%/python setup.py install"
   - "%WITH_COMPILER% %PYTHON%/python setup.py bdist_wheel"
 
