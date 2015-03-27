@@ -20,7 +20,7 @@ install:
 build: off
 
 test_script:
-  - "%WITH_COMPILER% %PYTHON%/python setup.py bdist_wheel"
+  - "%WITH_COMPILER% %PYTHON%/python setup.py install"
 
 artifacts:
   - path: dist\*
