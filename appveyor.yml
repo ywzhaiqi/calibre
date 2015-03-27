@@ -20,7 +20,9 @@ install:
 build: off
 
 test_script:
+  - "%WITH_COMPILER% %PYTHON%/pip install win32api"
   - "%WITH_COMPILER% %PYTHON%/python setup.py install"
+  - "%WITH_COMPILER% %PYTHON%/python setup.py bdist_wheel"
 
 artifacts:
   - path: dist\*
