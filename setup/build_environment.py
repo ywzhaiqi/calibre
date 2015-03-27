@@ -40,8 +40,8 @@ PKGCONFIG = find_executable('pkg-config')
 PKGCONFIG = os.environ.get('PKG_CONFIG', PKGCONFIG)
 
 if iswindows:
-    import win32api
-    cpu_count = win32api.GetSystemInfo()[5]
+    # import win32api
+    cpu_count = 1
 else:
     from multiprocessing import cpu_count
     try:
